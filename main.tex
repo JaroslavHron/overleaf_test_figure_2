@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+%%%%%%%%%%%% definice pro obrazek %%%%%%%%%%%%
+\usepackage{tikz}
+\usepackage{tikzscale}
+\usetikzlibrary{math}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+\tikzset{>=latex}
+
+
+\begin{document}
+
+%% vlozeni obrazku %%
+\input{figure1.tex}
+\begin{figure}
+\begin{tikzpicture}
+\pipe{0}{5}{1}
+\pipe{40}{0}{2}
+\pipe{80}{-5}{3}
+\end{tikzpicture}    
+\caption{caption}
+\end{figure}
+
+
+
+\begin{figure}
+    \centering
+\includegraphics{Screenshot 2023-08-24 141914.png}
+\end{figure}
+
+\end{document}
